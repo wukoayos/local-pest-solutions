@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Pest Solutions — Pest Control Toolamba & Greater Shepparton</title>
+  <meta name="description" content="Professional pest control services in Toolamba, Shepparton & surrounding areas. Termites, spiders, rodents, ants — fast, safe, and affordable. Call 0438 401 212.">
+  <meta property="og:title" content="Local Pest Solutions — Pest Control Toolamba & Greater Shepparton">
+  <meta property="og:description" content="Professional pest control services in Toolamba, Shepparton & surrounding areas. Termites, spiders, rodents, ants — fast, safe, and affordable. Call 0438 401 212.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://local-pest-solutions.vercel.app">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1B6B3A',
+            'primary-light': '#228B4A',
+            secondary: '#D97706',
+            'secondary-light': '#E8890A',
+            accent: '#1A4B8C',
+            'bg-main': '#F8FAF8',
+            'bg-alt': '#EDF5EE',
+            surface: '#FFFFFF',
+            'text-main': '#1A202C',
+            'text-light': '#64748B',
+          },
+          fontFamily: {
+            heading: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: #1A202C; background-color: #F8FAF8; }
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PestControlService",
+    "name": "Local Pest Solutions",
+    "description": "Professional pest control services in Toolamba, Shepparton & surrounding areas. Termites, spiders, rodents, ants, cockroaches, and more.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Toolamba", "addressRegion": "VIC", "addressCountry": "AU", "postalCode": "3614" },
+    "telephone": "+61438401212",
+    "email": "kimargaet@hotmail.com",
+    "url": "https://local-pest-solutions.vercel.app",
+    "priceRange": "$$",
+    "areaServed": ["Toolamba", "Shepparton", "Mooroopna", "Tatura", "Murchison", "Nagambie"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "14:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-primary text-white px-4 py-2 rounded z-50">Skip to content</a>
+
+  <!-- Top Banner -->
+  <div class="bg-secondary text-white text-center py-2.5 text-sm font-semibold fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-center gap-3 flex-wrap">
+      <span class="inline-flex items-center gap-1.5">
+        <i data-lucide="shield-check" class="w-4 h-4"></i>
+        Licensed & Insured Pest Control
+      </span>
+      <span class="hidden sm:inline">—</span>
+      <a href="tel:0438401212" class="underline font-bold hover:text-white/90">Call 0438 401 212</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed top-[42px] w-full z-40 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-2 group">
+          <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center group-hover:bg-primary-light transition-colors">
+            <i data-lucide="bug-off" class="w-6 h-6 text-white"></i>
+          </div>
+          <span class="text-2xl font-bold text-primary">Local<span class="text-secondary">Pest</span></span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/" class="text-text-main font-medium hover:text-primary transition-colors">Home</a>
+          <a href="/services.html" class="text-text-main font-medium hover:text-primary transition-colors">Services</a>
+          <a href="/contact.html" class="text-text-main font-medium hover:text-primary transition-colors">Contact</a>
+        </div>
+
+        <!-- CTA -->
+        <div class="hidden md:flex items-center gap-4">
+          <a href="tel:0438401212" class="flex items-center gap-2 text-primary font-semibold">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+            0438 401 212
+          </a>
+          <a href="tel:0438401212" class="bg-secondary hover:bg-secondary-light text-white px-5 py-2.5 rounded-lg font-semibold transition-colors inline-flex items-center gap-2">
+            <i data-lucide="phone-call" class="w-4 h-4"></i>
+            Call Now
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Toggle menu">
+          <i data-lucide="menu" class="w-6 h-6 text-text-main"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 py-4 space-y-3">
+        <a href="/" class="block py-2 text-text-main font-medium hover:text-primary">Home</a>
+        <a href="/services.html" class="block py-2 text-text-main font-medium hover:text-primary">Services</a>
+        <a href="/contact.html" class="block py-2 text-text-main font-medium hover:text-primary">Contact</a>
+        <a href="tel:0438401212" class="block bg-secondary text-white text-center py-3 rounded-lg font-semibold mt-3">
+          Call 0438 401 212
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[85vh] flex items-center justify-center text-white" style="margin-top: 0; padding-top: calc(42px + 80px);">
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1632935190653-7520c4de4250?w=1600&q=80" alt="Professional pest control technician inspecting a home" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/30"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-4 text-center py-20">
+        <div class="inline-flex items-center gap-2 bg-primary/90 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
+          <i data-lucide="map-pin" class="w-4 h-4"></i>
+          Toolamba & Greater Shepparton
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          Pest-Free Home,<br class="hidden sm:block"> Peace of Mind
+        </h1>
+        <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+          Termites, spiders, rodents, ants — we handle them all. Local, trusted pest control for homes and businesses across the Greater Shepparton region.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:0438401212" class="bg-secondary hover:bg-secondary-light text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center justify-center gap-2 shadow-lg">
+            <i data-lucide="phone-call" class="w-5 h-5"></i>
+            Call 0438 401 212
+          </a>
+          <a href="/contact.html" class="bg-white/15 hover:bg-white/25 backdrop-blur-sm text-white border border-white/30 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center gap-2">
+            Get a Free Quote
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Features -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 fade-up">
+          <h2 class="text-3xl sm:text-4xl font-bold text-text-main mb-4">Why Choose Local Pest Solutions?</h2>
+          <p class="text-text-light text-lg max-w-2xl mx-auto">Your local pest control experts — safe, effective, and always reliable.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 fade-up">
+          <div class="text-center p-6 rounded-2xl bg-bg-main hover:shadow-lg transition-shadow">
+            <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <i data-lucide="shield-check" class="w-8 h-8 text-primary"></i>
+            </div>
+            <h3 class="text-lg font-bold text-text-main mb-2">Licensed & Insured</h3>
+            <p class="text-text-light text-sm leading-relaxed">Fully licensed pest control technician with comprehensive insurance for your peace of mind.</p>
+          </div>
+          <div class="text-center p-6 rounded-2xl bg-bg-main hover:shadow-lg transition-shadow">
+            <div class="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <i data-lucide="leaf" class="w-8 h-8 text-secondary"></i>
+            </div>
+            <h3 class="text-lg font-bold text-text-main mb-2">Safe Treatments</h3>
+            <p class="text-text-light text-sm leading-relaxed">Family and pet-friendly treatments. We use products that are tough on pests but safe for your home.</p>
+          </div>
+          <div class="text-center p-6 rounded-2xl bg-bg-main hover:shadow-lg transition-shadow">
+            <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <i data-lucide="map-pin" class="w-8 h-8 text-primary"></i>
+            </div>
+            <h3 class="text-lg font-bold text-text-main mb-2">Locally Owned</h3>
+            <p class="text-text-light text-sm leading-relaxed">Based in Toolamba, we know the local pests and conditions. Your neighbours trust us — you can too.</p>
+          </div>
+          <div class="text-center p-6 rounded-2xl bg-bg-main hover:shadow-lg transition-shadow">
+            <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <i data-lucide="badge-check" class="w-8 h-8 text-accent"></i>
+            </div>
+            <h3 class="text-lg font-bold text-text-main mb-2">Guaranteed Results</h3>
+            <p class="text-text-light text-sm leading-relaxed">We stand behind our work. If pests come back within the warranty period, so do we — free of charge.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="py-16 bg-bg-alt">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 fade-up">
+          <h2 class="text-3xl sm:text-4xl font-bold text-text-main mb-4">Our Services</h2>
+          <p class="text-text-light text-lg">Complete pest management for homes and businesses</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 fade-up">
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow text-center group">
+            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+              <i data-lucide="bug" class="w-7 h-7 text-primary"></i>
+            </div>
+            <h3 class="text-lg font-bold text-text-main mb-2">Termite Inspections</h3>
+            <p class="text-text-light text-sm leading-relaxed">Thorough termite inspections and treatment plans to protect your biggest investment.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow text-center group">
+            <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary/20 transition-colors">
+              <i data-lucide="scan-search" class="w-7 h-7 text-secondary"></i>
+            </div>
+            <h3 class="text-lg font-bold text-text-main mb-2">General Pest Control</h3>
+            <p class="text-text-light text-sm leading-relaxed">Spiders, ants, cockroaches, silverfish — one treatment covers all common household pests.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow text-center group">
+            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+              <i data-lucide="rat" class="w-7 h-7 text-primary"></i>
+            </div>
+            <h3 class="text-lg font-bold text-text-main mb-2">Rodent Control</h3>
+            <p class="text-text-light text-sm leading-relaxed">Mice and rat removal with entry point sealing to stop them coming back.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow text-center group">
+            <div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-colors">
+              <i data-lucide="home" class="w-7 h-7 text-accent"></i>
+            </div>
+            <h3 class="text-lg font-bold text-text-main mb-2">Pre-Purchase Inspections</h3>
+            <p class="text-text-light text-sm leading-relaxed">Buying a property? Get a comprehensive pest inspection before you commit.</p>
+          </div>
+        </div>
+        <div class="text-center mt-10 fade-up">
+          <a href="/services.html" class="bg-primary hover:bg-primary-light text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center gap-2">
+            View All Services
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 fade-up">
+          <h2 class="text-3xl sm:text-4xl font-bold text-text-main mb-4">What Our Customers Say</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 fade-up">
+          <div class="bg-bg-main rounded-2xl p-8 shadow-sm">
+            <div class="flex gap-1 mb-4">
+              <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+              <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+              <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+              <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+              <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            </div>
+            <p class="text-text-main leading-relaxed mb-6">"Found termites in our deck and panicked. Kim came out the next day, did a full inspection, and had a treatment plan sorted straight away. Really thorough and professional."</p>
+            <div>
+              <p class="font-semibold text-text-main">David R.</p>
+              <p class="text-text-light text-sm">Homeowner, Shepparton</p>
+            </div>
+          </div>
+          <div class="bg-bg-main rounded-2xl p-8 shadow-sm">
+            <div class="flex gap-1 mb-4">
+              <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+              <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+              <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+              <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+              <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            </div>
+            <p class="text-text-main leading-relaxed mb-6">"We use Local Pest Solutions for our rental properties. Always reliable, always on time, and the tenants are always happy. Wouldn't use anyone else."</p>
+            <div>
+              <p class="font-semibold text-text-main">Michelle T.</p>
+              <p class="text-text-light text-sm">Property Manager, Mooroopna</p>
+            </div>
+          </div>
+          <div class="bg-bg-main rounded-2xl p-8 shadow-sm">
+            <div class="flex gap-1 mb-4">
+              <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+              <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+              <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+              <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+              <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+            </div>
+            <p class="text-text-main leading-relaxed mb-6">"Had a mouse problem in our cafe kitchen. Kim sorted it out quickly and discreetly, and showed us how to prevent it happening again. Great service."</p>
+            <div>
+              <p class="font-semibold text-text-main">Tony S.</p>
+              <p class="text-text-light text-sm">Business Owner, Tatura</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="py-16 bg-bg-alt">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center fade-up">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-text-main mb-6">About Local Pest Solutions</h2>
+            <div class="space-y-4 text-text-light leading-relaxed">
+              <p>Local Pest Solutions provides professional pest control services for homes and businesses across Toolamba, Shepparton, and the Greater Shepparton region.</p>
+              <p>We know the local pests — from the termites that thrive in our climate to the spiders and rodents that find their way into homes. Every treatment is tailored to your property and the specific pest problem you're facing.</p>
+              <p>We use safe, effective treatments that protect your family and pets while eliminating pests for good. All work comes with a warranty, so you can rest easy knowing we stand behind every job.</p>
+            </div>
+            <div class="flex flex-wrap gap-3 mt-6">
+              <span class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">Licensed Technician</span>
+              <span class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">Fully Insured</span>
+              <span class="bg-secondary/10 text-secondary px-4 py-2 rounded-full text-sm font-medium">Pet & Family Safe</span>
+              <span class="bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-medium">Warranty on All Work</span>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-lg">
+            <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?w=800&q=80" alt="Pest control technician at work" class="w-full h-80 object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Area -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-up">
+        <h2 class="text-3xl sm:text-4xl font-bold text-text-main mb-4">Areas We Service</h2>
+        <p class="text-text-light text-lg mb-8">Proudly serving Toolamba, Shepparton, and surrounding towns</p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="bg-bg-main text-text-main px-5 py-2.5 rounded-full text-sm font-medium shadow-sm border border-gray-100">Toolamba</span>
+          <span class="bg-bg-main text-text-main px-5 py-2.5 rounded-full text-sm font-medium shadow-sm border border-gray-100">Shepparton</span>
+          <span class="bg-bg-main text-text-main px-5 py-2.5 rounded-full text-sm font-medium shadow-sm border border-gray-100">Mooroopna</span>
+          <span class="bg-bg-main text-text-main px-5 py-2.5 rounded-full text-sm font-medium shadow-sm border border-gray-100">Tatura</span>
+          <span class="bg-bg-main text-text-main px-5 py-2.5 rounded-full text-sm font-medium shadow-sm border border-gray-100">Murchison</span>
+          <span class="bg-bg-main text-text-main px-5 py-2.5 rounded-full text-sm font-medium shadow-sm border border-gray-100">Nagambie</span>
+          <span class="bg-bg-main text-text-main px-5 py-2.5 rounded-full text-sm font-medium shadow-sm border border-gray-100">Kialla</span>
+          <span class="bg-bg-main text-text-main px-5 py-2.5 rounded-full text-sm font-medium shadow-sm border border-gray-100">Dookie</span>
+          <span class="bg-bg-main text-text-main px-5 py-2.5 rounded-full text-sm font-medium shadow-sm border border-gray-100">Euroa</span>
+          <span class="bg-bg-main text-text-main px-5 py-2.5 rounded-full text-sm font-medium shadow-sm border border-gray-100">Seymour</span>
+          <span class="bg-bg-main text-text-main px-5 py-2.5 rounded-full text-sm font-medium shadow-sm border border-gray-100">Kyabram</span>
+          <span class="bg-bg-main text-text-main px-5 py-2.5 rounded-full text-sm font-medium shadow-sm border border-gray-100">Benalla</span>
+        </div>
+        <p class="text-text-light text-sm mt-6">Don't see your town? Give us a call — we likely cover your area too.</p>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="py-16 bg-primary text-white">
+      <div class="max-w-4xl mx-auto px-4 text-center fade-up">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Got a Pest Problem?</h2>
+        <p class="text-white/80 text-lg mb-8">Call us today for a free quote — fast, friendly, and local</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:0438401212" class="bg-secondary hover:bg-secondary-light text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center justify-center gap-2">
+            <i data-lucide="phone-call" class="w-5 h-5"></i>
+            Call 0438 401 212
+          </a>
+          <a href="/contact.html" class="bg-white/15 hover:bg-white/25 border border-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center gap-2">
+            Request a Free Quote
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1A202C] text-[#CBD5E1] pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <!-- Brand -->
+        <div>
+          <a href="/" class="flex items-center gap-2 mb-4">
+            <div class="w-9 h-9 bg-primary rounded-lg flex items-center justify-center">
+              <i data-lucide="bug-off" class="w-5 h-5 text-white"></i>
+            </div>
+            <span class="text-xl font-bold text-white">Local<span class="text-secondary">Pest</span></span>
+          </a>
+          <p class="text-sm leading-relaxed">Professional pest control for homes and businesses across the Greater Shepparton region. Licensed, insured, and locally owned.</p>
+        </div>
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="/services.html" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="/contact.html" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Services -->
+        <div>
+          <h4 class="text-white font-semibold mb-4">Services</h4>
+          <ul class="space-y-2 text-sm">
+            <li>Termite Inspections</li>
+            <li>General Pest Control</li>
+            <li>Rodent Control</li>
+            <li>Pre-Purchase Inspections</li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-secondary"></i>
+              <a href="tel:0438401212" class="hover:text-white transition-colors">0438 401 212</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-secondary"></i>
+              <a href="mailto:kimargaet@hotmail.com" class="hover:text-white transition-colors">kimargaet@hotmail.com</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i>
+              Toolamba, VIC 3614
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="clock" class="w-4 h-4 text-secondary"></i>
+              Mon-Fri 7am-6pm, Sat 8am-2pm
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 text-center text-sm text-[#64748B]">
+        <p>&copy; 2026 Local Pest Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    lucide.createIcons();
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Fade-up on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

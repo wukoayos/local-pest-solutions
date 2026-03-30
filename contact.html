@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Local Pest Solutions | Pest Control Toolamba & Shepparton</title>
+  <meta name="description" content="Get a free pest control quote. Call 0438 401 212 or fill out our contact form. Serving Toolamba, Shepparton & Greater Shepparton region.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1B6B3A',
+            'primary-light': '#228B4A',
+            secondary: '#D97706',
+            'secondary-light': '#E8890A',
+            accent: '#1A4B8C',
+            'bg-main': '#F8FAF8',
+            'bg-alt': '#EDF5EE',
+            surface: '#FFFFFF',
+            'text-main': '#1A202C',
+            'text-light': '#64748B',
+          },
+          fontFamily: {
+            heading: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: #1A202C; background-color: #F8FAF8; }
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-primary text-white px-4 py-2 rounded z-50">Skip to content</a>
+
+  <!-- Top Banner -->
+  <div class="bg-secondary text-white text-center py-2.5 text-sm font-semibold fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-center gap-3 flex-wrap">
+      <span class="inline-flex items-center gap-1.5">
+        <i data-lucide="shield-check" class="w-4 h-4"></i>
+        Licensed & Insured Pest Control
+      </span>
+      <span class="hidden sm:inline">—</span>
+      <a href="tel:0438401212" class="underline font-bold hover:text-white/90">Call 0438 401 212</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed top-[42px] w-full z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="/" class="flex items-center gap-2 group">
+          <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center group-hover:bg-primary-light transition-colors">
+            <i data-lucide="bug-off" class="w-6 h-6 text-white"></i>
+          </div>
+          <span class="text-2xl font-bold text-primary">Local<span class="text-secondary">Pest</span></span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/" class="text-text-main font-medium hover:text-primary transition-colors">Home</a>
+          <a href="/services.html" class="text-text-main font-medium hover:text-primary transition-colors">Services</a>
+          <a href="/contact.html" class="text-primary font-semibold">Contact</a>
+        </div>
+
+        <div class="hidden md:flex items-center gap-4">
+          <a href="tel:0438401212" class="flex items-center gap-2 text-primary font-semibold">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+            0438 401 212
+          </a>
+          <a href="tel:0438401212" class="bg-secondary hover:bg-secondary-light text-white px-5 py-2.5 rounded-lg font-semibold transition-colors inline-flex items-center gap-2">
+            <i data-lucide="phone-call" class="w-4 h-4"></i>
+            Call Now
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Toggle menu">
+          <i data-lucide="menu" class="w-6 h-6 text-text-main"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 py-4 space-y-3">
+        <a href="/" class="block py-2 text-text-main font-medium hover:text-primary">Home</a>
+        <a href="/services.html" class="block py-2 text-text-main font-medium hover:text-primary">Services</a>
+        <a href="/contact.html" class="block py-2 text-primary font-semibold">Contact</a>
+        <a href="tel:0438401212" class="block bg-secondary text-white text-center py-3 rounded-lg font-semibold mt-3">
+          Call 0438 401 212
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main" style="padding-top: calc(42px + 80px);">
+
+    <!-- Page Header -->
+    <section class="py-16 bg-primary text-white">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4">Get in Touch</h1>
+        <p class="text-white/80 text-lg">Call us or send a message — we'll get back to you within the hour</p>
+      </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+          <!-- Contact Form -->
+          <div class="fade-up">
+            <h2 class="text-2xl font-bold text-text-main mb-6">Request a Free Quote</h2>
+            <form id="contact-form" class="space-y-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-text-main mb-1.5">Name *</label>
+                  <input type="text" id="name" name="name" required
+                    class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/30 focus:border-primary outline-none transition-colors"
+                    placeholder="Your name">
+                </div>
+                <div>
+                  <label for="phone" class="block text-sm font-medium text-text-main mb-1.5">Phone *</label>
+                  <input type="tel" id="phone" name="phone" required
+                    class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/30 focus:border-primary outline-none transition-colors"
+                    placeholder="04XX XXX XXX">
+                </div>
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-text-main mb-1.5">Email</label>
+                <input type="email" id="email" name="email"
+                  class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/30 focus:border-primary outline-none transition-colors"
+                  placeholder="your@email.com">
+              </div>
+              <div>
+                <label for="suburb" class="block text-sm font-medium text-text-main mb-1.5">Suburb</label>
+                <input type="text" id="suburb" name="suburb"
+                  class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/30 focus:border-primary outline-none transition-colors"
+                  placeholder="e.g. Shepparton, Toolamba, Mooroopna">
+              </div>
+              <div>
+                <label for="pest-type" class="block text-sm font-medium text-text-main mb-1.5">Type of Pest</label>
+                <select id="pest-type" name="pest-type"
+                  class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/30 focus:border-primary outline-none transition-colors bg-white">
+                  <option value="">Select a pest type</option>
+                  <option value="termites">Termites</option>
+                  <option value="spiders">Spiders</option>
+                  <option value="ants">Ants</option>
+                  <option value="cockroaches">Cockroaches</option>
+                  <option value="rodents">Mice / Rats</option>
+                  <option value="fleas">Fleas</option>
+                  <option value="wasps">Wasps / Bees</option>
+                  <option value="general">General Pest Treatment</option>
+                  <option value="pre-purchase">Pre-Purchase Inspection</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-text-main mb-1.5">Message</label>
+                <textarea id="message" name="message" rows="4"
+                  class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/30 focus:border-primary outline-none transition-colors resize-none"
+                  placeholder="Tell us about your pest problem..."></textarea>
+              </div>
+              <button type="submit"
+                class="w-full bg-primary hover:bg-primary-light text-white py-3.5 rounded-lg font-semibold transition-colors inline-flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-5 h-5"></i>
+                Send Quote Request
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="fade-up">
+            <h2 class="text-2xl font-bold text-text-main mb-6">Contact Details</h2>
+
+            <!-- Phone -->
+            <div class="bg-bg-main rounded-2xl p-6 mb-6">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="phone" class="w-6 h-6 text-secondary"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-text-main mb-1">Call Us</h3>
+                  <a href="tel:0438401212" class="text-2xl font-bold text-primary hover:text-primary-light transition-colors">0438 401 212</a>
+                  <p class="text-text-light text-sm mt-1">Mon-Fri 7am-6pm, Sat 8am-2pm</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="bg-bg-main rounded-2xl p-6 mb-6">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="mail" class="w-6 h-6 text-primary"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-text-main mb-1">Email</h3>
+                  <a href="mailto:kimargaet@hotmail.com" class="text-primary hover:text-primary-light transition-colors font-medium">kimargaet@hotmail.com</a>
+                  <p class="text-text-light text-sm mt-1">We reply within the hour during business hours</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="bg-bg-main rounded-2xl p-6 mb-6">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="map-pin" class="w-6 h-6 text-accent"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-text-main mb-1">Service Area</h3>
+                  <p class="text-text-main font-medium">Toolamba, VIC 3614</p>
+                  <p class="text-text-light text-sm mt-1">Serving Greater Shepparton and surrounding towns</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Why Call -->
+            <div class="bg-primary/5 border border-primary/10 rounded-2xl p-6">
+              <h3 class="font-bold text-text-main mb-3">Why call Local Pest Solutions?</h3>
+              <ul class="space-y-2">
+                <li class="flex items-center gap-2 text-text-main text-sm">
+                  <i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>
+                  Free, no-obligation quotes
+                </li>
+                <li class="flex items-center gap-2 text-text-main text-sm">
+                  <i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>
+                  Same-week appointments available
+                </li>
+                <li class="flex items-center gap-2 text-text-main text-sm">
+                  <i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>
+                  Licensed, insured, and locally owned
+                </li>
+                <li class="flex items-center gap-2 text-text-main text-sm">
+                  <i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>
+                  Safe for families and pets
+                </li>
+                <li class="flex items-center gap-2 text-text-main text-sm">
+                  <i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>
+                  All work backed by warranty
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1A202C] text-[#CBD5E1] pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <a href="/" class="flex items-center gap-2 mb-4">
+            <div class="w-9 h-9 bg-primary rounded-lg flex items-center justify-center">
+              <i data-lucide="bug-off" class="w-5 h-5 text-white"></i>
+            </div>
+            <span class="text-xl font-bold text-white">Local<span class="text-secondary">Pest</span></span>
+          </a>
+          <p class="text-sm leading-relaxed">Professional pest control for homes and businesses across the Greater Shepparton region.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="/services.html" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="/contact.html" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Services</h4>
+          <ul class="space-y-2 text-sm">
+            <li>Termite Inspections</li>
+            <li>General Pest Control</li>
+            <li>Rodent Control</li>
+            <li>Pre-Purchase Inspections</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-secondary"></i>
+              <a href="tel:0438401212" class="hover:text-white transition-colors">0438 401 212</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-secondary"></i>
+              <a href="mailto:kimargaet@hotmail.com" class="hover:text-white transition-colors">kimargaet@hotmail.com</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i>
+              Toolamba, VIC 3614
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 text-center text-sm text-[#64748B]">
+        <p>&copy; 2026 Local Pest Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Contact form — mailto compose
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+      const suburb = document.getElementById('suburb').value;
+      const pestType = document.getElementById('pest-type').value;
+      const message = document.getElementById('message').value;
+
+      const subject = encodeURIComponent('Quote Request — ' + (pestType || 'Pest Control'));
+      const body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Phone: ' + phone + '\n' +
+        (email ? 'Email: ' + email + '\n' : '') +
+        (suburb ? 'Suburb: ' + suburb + '\n' : '') +
+        (pestType ? 'Pest Type: ' + pestType + '\n' : '') +
+        '\n' + (message || '')
+      );
+
+      window.location.href = 'mailto:kimargaet@hotmail.com?subject=' + subject + '&body=' + body;
+    });
+  </script>
+</body>
+</html>
